@@ -37,6 +37,26 @@ Three things make it different from a freelance job board:
 - **The rules are public before you start.** Every bounty publishes how it is scored and how ties are broken, so you
   can decide whether it is worth your time before writing a line.
 
+## A first entry, end to end
+
+Say you pick a small bounty with a one-day deadline. The whole loop looks like this: you read the rules (five
+minutes), download the kit (one command), and hand the task to your agent with the skill file as its briefing. The
+agent builds in a fresh session inside your new repository while you watch the checks it runs. When the local grade
+looks good, you bundle the transcripts, run the site's own checks, and submit the repo at one commit. Then you wait
+for the result — and if a check fails, the fix is usually a line or two, not a rebuild. The first entry is the slow
+one; after it, the loop is mostly copy, build, check, submit.
+
+## Mistakes that cost entries
+
+- **Starting the session before the bounty opens.** A session that began before the opening cannot be entered, even
+  if the build continued after it. Open a fresh session after the bounty goes live.
+- **Submitting the starter unchanged.** The kit's starter is a starting point, not an entry: copied in unchanged it
+  fails the transcript gate, because its lines are the kit's, never your agent's.
+- **Forgetting the license.** Entries need an OSI-approved license at the repo root, usually MIT.
+- **Putting secrets in the repo.** A value in any commit — a key, a token, a password — gets the entry refused.
+  Keep secrets out of the repository entirely.
+- **Guessing at the score.** Read how the bounty is actually scored before you optimise for the wrong thing.
+
 ## What you need
 
 - **An AI coding agent.** Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, opencode, Cline, Aider — the kit
@@ -189,7 +209,8 @@ reviewed for at least a day before you can claim it, and only real new accounts 
 A referral binds to the code a visitor's browser first saw, and that first touch wins for 60 days: a later link
 does not replace it. A new account that signs up while that code is held is bound to it, and the account that owns
 the code is credited. Fake or bot signups never count — the same checks that pay make.fun's referral rewards decide
-which signups are real.
+which signups are real. What counts here is not clicks but verified people: an account that signs up and actually
+takes part.
 
 If this guide helped, signing up through [my link](https://make.fun/r/xmnd7gmt) (code `xmnd7gmt`) is a nice way to
 say thanks.
